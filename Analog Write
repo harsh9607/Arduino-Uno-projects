@@ -1,0 +1,14 @@
+// Analog write 
+// 0         125        255 
+// 0 Volts  ~2.5V        5 Volts  
+int blackPin = 9 ;
+int brightness = 25; 
+void setup() {
+  // put your setup code here, to run once:
+pinMode(blackPin,OUTPUT); 
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+analogWrite(blackPin, brightness );
+}
